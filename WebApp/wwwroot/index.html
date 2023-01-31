@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--Import bootstrap and CSS stylesheet-->
+    <link href="lib/bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/icon.png">
+    <title>My About Me Page</title>
+</head>
+<body>
+    <!--Content-->
+    <h1> Trey Redd </h1>
+    <img src="img/IMG_1946.jpg" />
+
+    <h4>What I hope to get out of IS 413</h4>
+    <p>
+        I hope to be able to learn how to effectively utilize the ASP.NET
+        infrastructure to more easily build web applications, learn to use C#,
+        and gain more experience with a web-app framework that allows me to be
+        useful in a full-stack web development context
+    </p>
+
+    <h3>My Top Job Picks</h3>
+    <ol>
+        <li>Data Analyst</li>
+        <li>Security Analyst</li>
+        <li>Data Engineer</li>
+    </ol>
+    <br />
+    <!--Grade calculation input form-->
+    <h3>Grade Calculator</h3>
+    <h4>Enter your grades as percentages</h4>
+    <form>
+        <label>Assignments</label>
+        <input id="As" /><br />
+        <label>Group Projects</label>
+        <input id="GP" /><br />
+        <label>Quizzes</label>
+        <input id="Qz" /><br />
+        <label>Midterm Exam</label>
+        <input id="MEx" /><br />
+        <label>Final Exam</label>
+        <input id="FEx" /><br />
+        <label>INTEX Grade</label>
+        <input id="INTEX" /><br />
+        <input id="btnsubmit" type="button" value="Submit" />
+        <br /><br />
+        <label>Total: </label>
+        <span id="numTotal"></span>
+    </form>
+     
+    <!--Import Bootstrap JS and custom JS application-->
+    <script src="lib/bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+    <script src="lib/jq/jquery-3.6.3.min.js"></script>
+    <script src="js/GradeCalculator.js"></script>
+    
+</body>
+</html>

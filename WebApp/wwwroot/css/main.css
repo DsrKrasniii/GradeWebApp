@@ -1,0 +1,15 @@
+﻿body {
+    font-family: Georgia, 'Brush Script MT', cursive, 'Informal Roman', Arial, sans-serif
+}
+
+label {
+    font-size:medium;
+    color:black;
+    font-display:block;
+    width: 150px;
+    display:inline-block;
+}
+
+li {
+    font-display:block;
+}
