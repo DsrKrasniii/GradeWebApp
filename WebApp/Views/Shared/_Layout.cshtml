@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="lib/bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/icon.png">
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="GradeCalc">Grade Calculator</a>
+    </nav>
+
+    <!--Refer to HTML in the page that is specific to the page-->
+    <div>
+        @RenderBody()
+    </div>
+
+    <!--Footer-->
+    <footer>Copyright - Trey Redd 2023</footer>
+
+    <!--Import Bootstrap JS and custom JS application-->
+    <script src="~/lib/bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+    <script src="~/lib/jq/jquery-3.6.3.min.js"></script>
+</body>
+</html>

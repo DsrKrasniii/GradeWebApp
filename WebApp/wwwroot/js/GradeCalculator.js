@@ -1,4 +1,5 @@
-﻿document.getElementById('btnsubmit').addEventListener('click', function () {
+﻿//Calculate the grade
+document.getElementById('btnsubmit').addEventListener('click', function () {
     asign = $('#As').val();
     group = $('#GP').val();
     quiz = $('#Qz').val();
@@ -10,5 +11,5 @@
 
     $('#numTotal').text(total);
 
-
+    alert("Final Grade: " + total)
 })

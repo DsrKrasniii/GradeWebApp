@@ -1,0 +1,28 @@
+﻿
+@* grade input page *@
+@model Calculator;
+<!--Grade calculation input form-->
+<h3>Grade Calculator</h3>
+<h4>Enter your grades as percentages</h4>
+<form method="post">
+    <label>Assignments</label>
+    <input id="As"  asp-for="assignments"/><br />
+    <label>Group Projects</label>
+    <input id="GP" asp-for="Group_Projects"/><br />
+    <label>Quizzes</label>
+    <input id="Qz" asp-for="Quizzes"/><br />
+    <label>Midterm Exam</label>
+    <input id="MEx" asp-for="Miderm_Exam"/><br />
+    <label>Final Exam</label>
+    <input id="FEx" asp-for="Final_Exam"/><br />
+    <label>INTEX Grade</label>
+    <input id="INTEX" asp-for="Intex"/><br />
+    <input id="btnsubmit" type="submit" value="Calculate" />
+    <br /><br />
+    <label>Total: </label>
+    <span id="numTotal"></span>
+
+    <div asp-validation-summary="All"></div>
+</form>
+
+<script src="~/js/GradeCalculator.js"></script>
